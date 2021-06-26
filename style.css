@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #343434 ;
+}
+
+.resume-section {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#interests {
+    border: none;
+}
+
+.resume-section#about h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.resume-section h1 {
+    font-size: 3rem;
+}
+
+.resume-section h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.resume-section h3 {
+    font-weight: 700;
+}
+
+.resume-section p{
+    text-align: justify;
+}
+
+.link-icons {
+    color: grey;
+}
+
+#github:hover {
+    color: black;
+}
+
+#html:hover {
+    color: #E44D26;
+}
+
+#css:hover {
+    color: var(--bs-primary);
+}
+
+#js {
+    height: 44px;
+}
+
+#js:hover {
+    color: #FFCA28;
+    background-image: linear-gradient(transparent 5px, black 5px);
+}
+
+#git:hover {
+    color: #E84E31;
+}
+
+#bootstrap:hover {
+    color: #7311F6
+}
+
+
+.my-auto {
+    width: 100%;
+}
+
+.card img {
+    transition: transform .25s ease,-webkit-transform .25s ease;
+    cursor: zoom-in;
+}
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+
+.card-deck .card {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 350px;
+    height: 450px;
+}
+
+@media (min-width: 992px) {
+    
+    .main-container {
+        margin-left: 15rem;
+    }
+
+    .resume-section {
+        padding-left: 5rem;
+    }
+
+    .resume-item {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .resume-content {
+        max-width: 70%;
+    }
+
+    #sideBar {
+        width: 15rem;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #sideBar > a {
+        display: flex;
+        flex-direction: column;
+        flex: 1.5;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    #sideBar a > img {
+        border: 0.5rem solid #4FBB77;
+    }
+
+    #sideBar span {
+        margin-top: 2rem;
+    }
+
+    #navbarNav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
